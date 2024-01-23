@@ -1,0 +1,129 @@
+* {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+   padding-top: 20px; /* adiciona espaçamento */
+   padding-right: 100px;
+   padding-left: 100px;
+   overflow-x: hidden;
+}
+
+.conteudo {
+   width: 100%; /* largura */
+   display: flex;
+   justify-content: space-between; /* adiciona espaço entre os itens */
+   align-items: center; /* alinha  tudo ao centro */
+
+}
+
+.caixa-texto {
+   width: 600px;
+   
+}
+
+.caixa-imagem {
+   width: 600px;
+   display: flex;
+   justify-content: flex-end; /* joga item todo pro lado */
+   margin-top: 250px;
+}
+
+.menu {
+   display: flex;
+   justify-content: center; /* joga itens para o centro */
+   position: absolute;
+  
+}
+
+button{
+   background-color: #017143; /* cor de fundo */
+   color: #ffffff; /* cor do texto */
+   border: none; /* borda */
+   padding: 10px;
+   border-radius: 20px;
+   cursor: pointer;
+   
+}
+.botão2{
+   background-color: #017143; /* cor de fundo */
+   color: #ffffff; /* cor do texto */
+   border: none; /* borda */
+   padding: 10px;
+   border-radius: 20px;
+   position: absolute;
+   top: 30px;
+   right: 100px;
+   font-size: larger;
+   
+}
+h2 {
+   font-size: 60px;
+   font-weight: 500;
+}
+
+span {
+   color: #017143;
+   font-size: 40px; /* muda tamanho do texto */
+   font-weight: 900;  /* muda a grossura do texto */
+   
+}
+
+p {
+   font-size: 16px;
+   margin-top: 20px;
+   margin-bottom: 30px;
+}
+
+.logo {
+   width: 120px;
+}
+
+.starbucks {
+   width: 200px;
+   z-index: 2; /* define se o item está a frente ou atrás */
+   margin-top: 20px;
+}
+
+.copo-pequeno {
+   width: 60px;
+   cursor: pointer;
+   transition: 1s;
+
+}
+
+.copo-pequeno:hover{
+  transform: translateY(-35px);
+}
+
+.circulo {
+   background-color: #017143;
+   width: 100%;
+   height: 109%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   clip-path: circle(500px at right 800px);
+
+}
+
+h2 {
+   font-size: 28px;
+   font-weight: 500;
+   white-space: nowrap;
+   overflow: hidden;
+   animation: digitando 4s steps(500); /* Ajustei o tempo e o número de steps */
+ }
+ 
+ @keyframes digitando {
+   from {
+     width: 0;
+   }
+   to {
+     width: 100%;
+   }
+ }
+ 
